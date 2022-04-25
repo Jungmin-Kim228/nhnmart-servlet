@@ -1,8 +1,8 @@
 package com.nhnacademy.nhnmart;
 
 public class Food {
-    private String name;
-    private int price;
+    private final String name;
+    private final int price;
     private int amount;
 
     public Food(String name, int price, int amount) {
@@ -21,5 +21,9 @@ public class Food {
 
     public int getAmount() {
         return amount;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 }

@@ -41,7 +41,7 @@
     <context-param>
         <param-name>foodStand</param-name>
         <param-value>
-            onion,1000,2,egg,2000,5,greenonion,500,10,apple,2000,20
+            onion,1000,2,egg,2000,5,green_onion,500,10,apple,2000,20
         </param-value>
     </context-param>
 
