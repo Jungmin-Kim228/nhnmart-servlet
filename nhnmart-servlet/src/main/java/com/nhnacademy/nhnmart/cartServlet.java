@@ -24,6 +24,11 @@ public class cartServlet extends HttpServlet {
         this.foodStand = (ArrayList<Food>) getServletContext().getAttribute("foodStand");
         int[] foodAmounts = checkAmountValid(req, resp, idx);
 
+        if (foodAmounts == null) {
+            resp.setStatus(417);
+            return;
+        }
+
         initBasketAndTotal(foodAmounts, idx);
         getServletContext().setAttribute("foodStand", foodStand);
 
