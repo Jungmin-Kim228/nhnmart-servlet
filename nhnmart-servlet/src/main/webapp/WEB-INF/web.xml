@@ -23,6 +23,16 @@
         <servlet-name>foodsServlet</servlet-name>
         <url-pattern>/foods</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cartServlet</servlet-name>
+        <servlet-class>com.nhnacademy.nhnmart.cartServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cartServlet</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
     
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

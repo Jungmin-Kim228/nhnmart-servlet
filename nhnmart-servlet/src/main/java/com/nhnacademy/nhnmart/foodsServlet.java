@@ -17,8 +17,12 @@ public class foodsServlet extends HttpServlet {
             ArrayList<Food> foods = (ArrayList<Food>) getServletContext().getAttribute("foodStand");
 
             for (Food f : foods) {
-                out.println(f.getName()+"(KRW "+f.getPrice()+"): "+f.getAmount());
+                out.println("["+f.getName()+"]");
+                out.println("- price: "+f.getPrice());
+                out.println("- amount: "+f.getAmount());
+                out.println();
             }
+            out.println("Please move to /basket.html");
         }
     }
 }

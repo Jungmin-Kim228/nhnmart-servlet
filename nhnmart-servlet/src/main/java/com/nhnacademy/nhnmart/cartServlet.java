@@ -1,4 +1,6 @@
 package com.nhnacademy.nhnmart;
 
-public class cartServlet {
+import javax.servlet.http.HttpServlet;
+
+public class cartServlet extends HttpServlet {
 }
